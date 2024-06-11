@@ -117,7 +117,7 @@ class PatriotSystem:
         if not self._iff.check_for_hostile_entity(radar_data):
             logger.info('Not hostiles identified.')
             return
-        logger.info('Hostile identified! Firing missiles.')
+        logger.info('Hostile identified! Firing missiles...')
         if self._firing_unit.fire_missile():
             logger.info('Target successfully neutralized!')
         else:
